@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <title>Document</title>
+    <style>
+      #input-box {
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        max-width: 600px;
+        min-width: 200px;
+      }
+      input {
+        padding: 10px;
+        outline: none;
+        width: 80%;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: indigo;
+        color: white;
+        outline: none;
+        border: 0px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message-container"></div>
+    <div id="input-box">
+      <input id="text-container" type="text" />
+      <button id="submit-button">Send</button>
+    </div>
+  </body>
+</html>
